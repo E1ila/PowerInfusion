@@ -10,6 +10,10 @@ Will do the following checks before casting -
 
 If enabled, will whisper the target if PI was OK or if there was an issue, like being too far.
 
+# Installation
+
+Download this as a ZIP file, decompress, rename to remove the `-master` postfix and copy it to your `WoW\Interface\AddOns` folder.
+
 # Usage
 
 * `/pi PLAYERNAME` - set your favorite caster, replace `PLAYERNAME` with the actual name, like `/pi polz`.
