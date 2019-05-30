@@ -20,4 +20,4 @@ Download this as a ZIP file, decompress, rename to remove the `-master` postfix 
 * `/pi h` - print help and current configuration.
 * `/pi y` - enable/disable yelling after a successful PI.
 * `/pi w` - enable/disable whispering the target in case of an issue, or if PI has been casted.
-* `/pi` - Smartly cast Power Infusion
+* `/pi` - smartly cast Power Infusion
