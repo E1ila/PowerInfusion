@@ -1,0 +1,7 @@
+## Interface: 11200
+## Author: E1ila
+## Title: PowerInfusion
+## Notes: Casts Power Infusion on pre-chosen target, if possible. 
+## SavedVariables: PITarget, Whisper, PISpellId, Yell
+PowerInfusion.lua
+PowerInfusion.xml
