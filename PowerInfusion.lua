@@ -7,6 +7,7 @@ ConfirmCast = true
 local POWER_INFUSION_SPELL_NAME = "Power Infusion"
 local POWER_INFUSION_SPELL_TEXTURE = "Spell_Holy_PowerInfusion"
 local CHECK_MAX_WAIT = 0.2
+local MINIMUM_MAGE_MANA_REQUIRED = 1000
 local ShouldCheckResult = nil
 
 local function print(text)
@@ -142,6 +143,16 @@ function PowerInfusion_Cast()
 		if Whisper then 
 			SendChatMessage("You're not around, can't PI!", "WHISPER", nil, PITarget)
 		end 
+		return
+	end 
+
+	local mana = UnitMana("target");
+	if mana < MINIMUM_MAGE_MANA_REQUIRED then 
+		print("|cFFFF8080 PowerInfusion |cFFFFFF00" .. PITarget .. " does not have enough mana!");
+		if Whisper then 
+			SendChatMessage("You don't have enough mana!", "WHISPER", nil, PITarget)
+		end 
+		TargetLastTarget()
 		return
 	end 
 
