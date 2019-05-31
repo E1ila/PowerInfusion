@@ -5,6 +5,7 @@ Will do the following checks before casting -
 * Check if PI was learnt by talent
 * Make sure there's no cooldown
 * Make sure target is in range
+• Make sure target has enough mana (useless to PI an OOM caster)
 * Check if target already has PI (from other priest?!)
 * Confirm that target has received PI 
 
